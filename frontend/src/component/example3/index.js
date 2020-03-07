@@ -9,9 +9,12 @@ import {
   sort_data_month
 } from "../../tool/sortEvents";
 import { nowDate, nowDay, nowMonth, nowYear } from "../../action/setStableDate";
+import Button from "@material-ui/core/Button";
+import { Link } from "react-router-dom";
 
-const Example3 = () => {
+const Example3 = props => {
   let { roomId } = useParams();
+  const { room } = props;
 
   let value = [];
 
@@ -35,6 +38,21 @@ const Example3 = () => {
 
   return (
     <div>
+      <div className="bar_buttom_room">
+        {room.map(item => {
+          return (
+            <div key={`${item.roomId}`}>
+              <Link
+                id={`link${item.roomId}`}
+                className={"buttom_link"}
+                to={`/bookinngs/today/${item.roomId}`}
+              >
+                {item.roomId}
+              </Link>
+            </div>
+          );
+        })}
+      </div>
       {typeof roomId !== "undefined" ? (
         <Room
           roomId={roomId}

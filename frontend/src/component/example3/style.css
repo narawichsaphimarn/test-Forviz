@@ -323,3 +323,25 @@
   line-height: 100%;
   color: #000000;
 }
+
+.bar_buttom_room {
+  max-width: 100%;
+  overflow-y: hidden;
+  overflow-x: auto;
+  height: 100px;
+  background-color: #2ebaee;
+  display: flex;
+  align-items: center;
+}
+
+.buttom_link {
+  border-radius: 2px;
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+  transition: all ease-in-out 200ms;
+}
+.buttom_link:hover {
+  background-color: #4d59a1;
+  color: white;
+}
