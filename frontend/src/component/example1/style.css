@@ -1,0 +1,26 @@
+.containner {
+  max-width: 100%;
+  padding-left: 4%;
+  padding-right: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containner-im {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.containner-image {
+  flex-grow: 1;
+  height: 150px;
+  margin: 4px;
+}
+.containner-image > img {
+  height: 150px;
+  width: auto;
+  min-width: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}

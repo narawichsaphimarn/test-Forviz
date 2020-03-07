@@ -1,0 +1,325 @@
+.room-containner {
+  max-width: 100%;
+  height: auto;
+  padding: 123px 96px 126px 96px;
+  background: radial-gradient(
+      75.44% 75.44% at 30.03% 0%,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    linear-gradient(228.66deg, #bcbfc8 10.31%, #91a2c6 90.59%), #b9bdc8;
+  display: flex;
+}
+.room-containner > div {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  background-color: white;
+  display: flex;
+}
+.upcomming {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+  min-height: 100%;
+  background: linear-gradient(#46529d 70%, #4d59a1 30%);
+  overflow: hidden;
+}
+.list-menu {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.name-room {
+  position: absolute;
+  background: #2ebaee;
+  box-shadow: 0px 4px 32px rgba(57, 64, 111, 0.25);
+  width: 80%;
+  height: 100px;
+  right: 0;
+  top: 0;
+}
+.name-room > p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 100%;
+  color: #ffffff;
+  margin-left: 26px;
+  margin-top: 36px;
+}
+.list-time {
+  width: 80%;
+  margin-left: 20%;
+  margin-top: 210px;
+  height: 100%;
+}
+.list-time > p:nth-child(1) {
+  color: #ffffff;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 100%;
+}
+.list-time > p:nth-child(2) {
+  color: #ffffff;
+  opacity: 0.5;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 100%;
+}
+.list-time > p:nth-child(3) {
+  color: #ffffff;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 100%;
+  margin-top: -50px;
+}
+
+.show-event-containner {
+  width: 80%;
+  height: 100%;
+  margin-left: 20%;
+}
+.event-panel {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.event-panel > p:nth-child(1) {
+  color: #ffffff;
+  opacity: 0.5;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 100%;
+}
+.event-panel > p:nth-child(2) {
+  margin-top: -5px;
+  color: #ffffff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 100%;
+}
+
+.nav-bar-container {
+  width: 100%;
+  height: 100px;
+  max-height: 100px;
+  background-color: #efeeec;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+}
+.nav-bar-container > div:nth-child(1) {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  cursor: pointer;
+}
+
+.active > div {
+  background: #707fdd;
+  box-shadow: 0px -1px 16px rgba(112, 127, 221, 0.75);
+  width: 51px;
+  height: 4px;
+  margin-left: calc((100% - 51px) / 2);
+  transition: all ease-out 600ms;
+}
+.nav-bar-container > .noActive p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 100%;
+  font-variant: small-caps;
+  color: #000000;
+  opacity: 0.5;
+}
+.nav-bar-container > .active p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 100%;
+  font-variant: small-caps;
+  color: #000000;
+}
+
+.nav-bar-container > div:nth-child(2) {
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  cursor: pointer;
+}
+
+.nav-bar-container > div:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 55%;
+  cursor: pointer;
+}
+
+.show-list-event {
+  width: 100%;
+  margin-top: 100px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.14);
+}
+
+.timeLine {
+  position: absolute;
+  left: 5%;
+  border: 1px solid #ececec;
+  width: 0;
+  height: 100%;
+  z-index: 300;
+}
+
+.timeLineWhole {
+  position: absolute;
+  left: 15%;
+  border: 1px solid #ececec;
+  width: 0;
+  height: 100%;
+  z-index: 300;
+}
+
+.bar-date2 {
+  position: absolute;
+  width: 100%;
+  height: 47px;
+  background: #f7f7f7;
+  border: 1px solid #ececec;
+  box-sizing: border-box;
+  z-index: 400;
+  display: flex;
+  align-items: center;
+}
+.bar-date2 > label {
+  position: relative;
+  left: 9%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 100%;
+  color: #787878;
+}
+
+.bar-date {
+  position: absolute;
+  width: 100%;
+  height: 47px;
+  background: #f7f7f7;
+  border: 1px solid #ececec;
+  box-sizing: border-box;
+  z-index: 400;
+  display: flex;
+  align-items: center;
+}
+.bar-date > label {
+  position: relative;
+  left: 9%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 100%;
+  color: #787878;
+}
+.list-containner {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 10%;
+  padding-top: 6%;
+  z-index: 400;
+  display: flex;
+}
+.content {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  z-index: 400;
+  margin-left: 5%;
+  margin-top: 47px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contentWhole {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  z-index: 400;
+  margin-left: 10%;
+  margin-top: 47px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contentWhole > div div:nth-child(2) p:nth-child(1) {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 100%;
+  color: #000000;
+  opacity: 0.5;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .dot-style {
+    left: -1px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .dot-style {
+    left: -2px;
+  }
+}
+
+.contentWhole > div div:nth-child(2) p:nth-child(2) {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 100%;
+  color: #000000;
+}
+
+.content > div div:nth-child(2) p:nth-child(1) {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 100%;
+  color: #000000;
+  opacity: 0.5;
+  margin-top: 20px;
+}
+
+.content > div div:nth-child(2) p:nth-child(2) {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 100%;
+  color: #000000;
+}

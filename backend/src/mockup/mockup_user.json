@@ -1,0 +1,50 @@
+[
+  {
+    "userName": "takeshi@gmail.com",
+    "password": "A12345",
+    "name": "Takeshi",
+    "lastName": "Mura",
+    "phoneNo": "0837273492",
+    "Project": "A"
+  },
+  {
+    "userName": "nobita@outlook.com",
+    "password": "B12345",
+    "name": "Nobita",
+    "lastName": "Jian",
+    "phoneNo": "0981342212",
+    "Project": "A"
+  },
+  {
+    "userName": "shizuka@hotmail.com",
+    "password": "C12345",
+    "name": "Shizuka",
+    "lastName": "Jung",
+    "phoneNo": "0818484848",
+    "Project": "B"
+  },
+  {
+    "userName": "suneo@gmail.com",
+    "password": "D12345",
+    "name": "Sueno",
+    "lastName": "Sushi",
+    "phoneNo": "0979292928",
+    "Project": "B"
+  },
+  {
+    "userName": "tsubaza@outlook.com",
+    "password": "E12345",
+    "name": "Tsubaza",
+    "lastName": "Baki",
+    "phoneNo": "0828472938",
+    "Project": "A"
+  },
+  {
+    "userName": "bryan@icloud.com",
+    "password": "F12345",
+    "name": "Bryan",
+    "lastName": "Trump",
+    "phoneNo": "0849184849",
+    "Project": "B"
+  }
+]
