@@ -1,12 +1,10 @@
 const mongoose = require("mongoose");
 const newsSchema = new mongoose.Schema({
   titleTH: {
-    type: String,
-    unique: true
+    type: String
   },
   titleEN: {
-    type: String,
-    unique: true
+    type: String
   },
   detailTH: {
     type: String
