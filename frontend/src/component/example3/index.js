@@ -21,7 +21,8 @@ const Example3 = props => {
     value = data.filter(item => item.roomId === roomId);
   }
 
-  console.log("value : ", value);
+  console.log("roomId : ", roomId);
+  console.table(value);
 
   let sortEvent = sort_event(value, nowDate, nowDay, nowMonth);
   let sortNextWeek = sort_event_nextWeek(value, nowDate, nowDay, nowMonth);
@@ -52,7 +53,7 @@ const Example3 = props => {
           );
         })}
       </div>
-      {typeof roomId !== "undefined" ? (
+      {roomId !== null ? (
         <Room
           roomId={roomId}
           value={value}
