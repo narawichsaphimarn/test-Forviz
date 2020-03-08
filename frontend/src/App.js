@@ -9,7 +9,6 @@ import ShowImages from "./component/example1/index";
 import Example3 from "./component/example3/index";
 import { FetchDataImages } from "./action/fetch/example1/fetchDataImage";
 import { data } from "./action/mock_data/example3/data";
-import { Redirect } from "react-router-dom";
 
 TabPanel.propTypes = {
   children: PropTypes.node,
@@ -21,10 +20,6 @@ const App = props => {
   const [value, setValue] = useState(0);
   const [dataImages, setDataImages] = useState([]);
   const _room = [];
-
-  const startRedirect = data => {
-    return <Redirect to={`/bookinngs/today/${data.room}`} />;
-  };
 
   const handleChange = (event, newValue) => {
     setValue(newValue);

@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-import { useParams } from "react-router-dom";
 import Room from "./room";
 import { data } from "../../action/mock_data/example3/data";
 import {
