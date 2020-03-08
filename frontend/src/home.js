@@ -8,7 +8,7 @@ const AppWithRouter = () => (
       path="/"
       render={e => (e.location.pathname === "/" ? <App value={0} /> : "")}
     />
-    <Route path="/bookinngs/today/:roomId" render={() => <App value={1} />} />
+    <Route path="/bookinngs/today" render={() => <App value={1} />} />
   </BrowserRouter>
 );
 

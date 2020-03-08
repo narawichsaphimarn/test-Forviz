@@ -9,20 +9,20 @@ import {
   sort_data_month
 } from "../../tool/sortEvents";
 import { nowDate, nowDay, nowMonth, nowYear } from "../../action/setStableDate";
-import Button from "@material-ui/core/Button";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Example3 = props => {
-  let { roomId } = useParams();
+  let query = new URLSearchParams(useLocation().search);
   const { room } = props;
 
   let value = [];
+  let roomId = query.get("roomId");
 
   if (typeof roomId !== "undefined") {
-    data.find(item => {
-      if (item.roomId === roomId) value.push(item);
-    });
+    value = data.filter(item => item.roomId === roomId);
   }
+
+  console.log("value : ", value);
 
   let sortEvent = sort_event(value, nowDate, nowDay, nowMonth);
   let sortNextWeek = sort_event_nextWeek(value, nowDate, nowDay, nowMonth);
@@ -45,7 +45,7 @@ const Example3 = props => {
               <Link
                 id={`link${item.roomId}`}
                 className={"buttom_link"}
-                to={`/bookinngs/today/${item.roomId}`}
+                to={`/bookinngs/today?roomId=${item.roomId}`}
               >
                 {item.roomId}
               </Link>
